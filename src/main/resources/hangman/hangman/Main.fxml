@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="439.0" prefWidth="584.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hangman.hangman.Controller">
+  <GridPane alignment="CENTER" prefHeight="438.0" prefWidth="584.0">
+    <Label fx:id="L_Heading" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="44.0" prefWidth="584.0" text="Hangman" textAlignment="CENTER" GridPane.columnSpan="3">
+         <font>
+            <Font name="Verdana Bold" size="32.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="30.0" top="70.0" />
+         </GridPane.margin></Label>
+      <ImageView fx:id="I_Viewport" fitHeight="263.0" fitWidth="294.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets bottom="25.0" top="50.0" />
+         </GridPane.margin></ImageView>
+      <Button fx:id="B_Enter" mnemonicParsing="false" onAction="#B_Enter_IsPressed" prefHeight="26.0" prefWidth="115.0" text="Enter" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+         <font>
+            <Font name="Verdana" size="13.0" />
+         </font>
+      </Button>
+      <Label fx:id="L_EnterLetters" alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="18.0" prefWidth="249.0" text="Enter letters:" textAlignment="CENTER" GridPane.rowIndex="4">
+         <font>
+            <Font name="Verdana" size="16.0" />
+         </font>
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+      </Label>
+      <TextField fx:id="I_Letters" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets />
+         </GridPane.margin>
+         <font>
+            <Font name="Verdana" size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="WARUMBINICHHIER" alignment="CENTER" contentDisplay="CENTER" maxWidth="50.0" prefHeight="30.0" prefWidth="168.0" textAlignment="CENTER" wrapText="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+      </Label>
+      <Label fx:id="L_UsedLetterList" alignment="CENTER" contentDisplay="CENTER" minHeight="-Infinity" prefHeight="23.0" prefWidth="386.0" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <font>
+            <Font name="Verdana Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="L_HiddenWord" contentDisplay="CENTER" prefHeight="20.0" prefWidth="586.0" text="Hidden Word:" textAlignment="CENTER" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+         <font>
+            <Font name="Verdana" size="16.0" />
+         </font>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets left="60.0" top="15.0" />
+         </GridPane.margin>
+      </Label>
+      <Button fx:id="B_Settings" mnemonicParsing="false" onAction="#On_BSettings_Pressed" text="Settings" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets bottom="275.0" left="150.0" />
+         </GridPane.margin>
+      </Button>
+      <columnConstraints>
+         <ColumnConstraints maxWidth="245.200048828125" minWidth="0.0" prefWidth="245.200048828125" />
+         <ColumnConstraints maxWidth="444.7999328613282" minWidth="0.0" prefWidth="212.59995117187495" />
+         <ColumnConstraints maxWidth="682.4" minWidth="126.40006713867183" prefWidth="269.59998779296876" />
+      </columnConstraints>
+      <rowConstraints>
+         <RowConstraints maxHeight="85.5999969482422" minHeight="2.4000038146972713" prefHeight="20.000009918212896" />
+         <RowConstraints maxHeight="363.1999961853028" minHeight="214.39999389648438" prefHeight="345.59999008178715" />
+         <RowConstraints maxHeight="145.60000610351562" minHeight="23.599999999999966" prefHeight="23.599999999999966" />
+         <RowConstraints maxHeight="145.60000610351562" minHeight="22.60003662109375" prefHeight="22.60003662109375" />
+         <RowConstraints maxHeight="96.80001220703122" minHeight="70.20003662109372" prefHeight="92.99996337890622" />
+      </rowConstraints>
+      <FlowPane.margin>
+         <Insets />
+      </FlowPane.margin>
+  </GridPane>
+</FlowPane>

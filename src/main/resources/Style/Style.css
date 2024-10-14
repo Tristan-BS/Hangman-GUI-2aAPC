@@ -1,0 +1,14 @@
+/* src/main/resources/styles.css */
+.button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: #45a049;
+}
+
+.text-field {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #ccc;
+}
