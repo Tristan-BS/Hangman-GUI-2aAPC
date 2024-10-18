@@ -1,3 +1,6 @@
+// 2a APC ITL12 - Eibiswald
+// Tristan Birnstingl
+
 package hangman.hangman;
 
 import java.util.ArrayList;
@@ -67,13 +70,21 @@ public class Hangman {
         return Hidden_Word.equals(Word);
     }
 
-    public String get_Target_Word() {
-        Word = WordList.getRandomWord();
-        return Word;
+    public void ResetValues() {
+        Word = "";
+        Used_Chars.clear();
+        Used_Words.clear();
+        Wrong_Attempts = 0;
+        Attempts = 0;
+        Hidden_Word = "";
+        LastAttempt = false;
     }
 
-    public String GetHiddenWord() {
-        return Hidden_Word;
+    // Getter
+
+    public String get_Target_Word(int Difficulty) {
+        Word = WordList.getRandomWord(Difficulty);
+        return Word;
     }
 
     public String get_Hidden_Word() {
@@ -91,18 +102,9 @@ public class Hangman {
         return Hidden_Word;
     }
 
-    public void ResetValues() {
-        Word = "";
-        Used_Chars.clear();
-        Used_Words.clear();
-        Wrong_Attempts = 0;
-        Attempts = 0;
-        Hidden_Word = "";
-        LastAttempt = false;
+    public String GetHiddenWord() {
+        return Hidden_Word;
     }
-
-    // Getter
-
     public ArrayList<String> getUsed_Chars() {
         return Used_Chars;
     }

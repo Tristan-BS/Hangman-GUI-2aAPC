@@ -2,7 +2,12 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -75,11 +80,21 @@
             <Insets left="60.0" top="15.0" />
          </GridPane.margin>
       </Label>
-      <Button fx:id="B_Settings" mnemonicParsing="false" onAction="#On_BSettings_Pressed" text="Settings" GridPane.columnIndex="2" GridPane.rowIndex="1">
+      <ComboBox fx:id="CB_Difficulty" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
          <GridPane.margin>
-            <Insets bottom="275.0" left="150.0" />
+            <Insets bottom="275.0" left="100.0" right="10.0" />
          </GridPane.margin>
-      </Button>
+      </ComboBox>
+      <MenuButton fx:id="MB_MenuButton" mnemonicParsing="false" text="Settings" GridPane.rowIndex="1">
+        <items>
+          <MenuItem fx:id="MI_ChangeTries" mnemonicParsing="false" onAction="#MI_ChangeTries_Pressed" text="Maximum Tries" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <CheckMenuItem fx:id="CB_ShowUW" mnemonicParsing="false" text="Show Used Letters" />
+        </items>
+         <GridPane.margin>
+            <Insets bottom="275.0" left="10.0" />
+         </GridPane.margin>
+      </MenuButton>
       <columnConstraints>
          <ColumnConstraints maxWidth="245.200048828125" minWidth="0.0" prefWidth="245.200048828125" />
          <ColumnConstraints maxWidth="444.7999328613282" minWidth="0.0" prefWidth="212.59995117187495" />

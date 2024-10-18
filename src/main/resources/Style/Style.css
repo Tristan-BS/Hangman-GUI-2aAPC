@@ -12,3 +12,76 @@
     -fx-background-color: #f0f0f0;
     -fx-border-color: #ccc;
 }
+
+.text-field:hover {
+    -fx-background-color: #f8f8f8;
+}
+
+/* MENU BUTTON DESIGN */
+
+.menu-button {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 2 4 2 4;
+    -fx-border-color: -fx-box-border;
+    -fx-border-insets: 0;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-font-size: 13px;
+    -fx-font-family: "Verdana";
+}
+
+.menu-button .label {
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.menu-button:hover {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+}
+
+.menu-button:focused {
+    -fx-background-color: -fx-focus-color, -fx-control-inner-background;
+    -fx-background-insets: -1.4, 1;
+    -fx-border-color: -fx-focus-color;
+}
+
+.menu-button .arrow {
+    -fx-background-color: -fx-mark-color;
+    -fx-padding: 0 5 0 5;
+}
+
+/* COMBO BOX DESIGN */
+
+
+.combo-box {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 2 4 2 4;
+    -fx-border-color: -fx-box-border;
+    -fx-border-insets: 0;
+    -fx-border-width: 1;
+    -fx-border-radius: 3;
+    -fx-background-radius: 3;
+    -fx-font-size: 13px;
+    -fx-font-family: "Verdana";
+}
+
+.combo-box .label {
+    -fx-text-fill: -fx-text-inner-color;
+}
+
+.combo-box:hover {
+    -fx-background-color: -fx-box-border, -fx-control-inner-background;
+}
+
+.combo-box:focused {
+    -fx-background-color: -fx-focus-color, -fx-control-inner-background;
+    -fx-background-insets: -1.4, 1;
+    -fx-border-color: -fx-focus-color;
+}
+
+.combo-box .arrow {
+    -fx-background-color: -fx-mark-color;
+    -fx-padding: 0 5 0 5;
+}

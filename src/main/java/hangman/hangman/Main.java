@@ -1,3 +1,6 @@
+// 2a APC ITL12 - Eibiswald
+// Tristan Birnstingl
+
 package hangman.hangman;
 
 import javafx.application.Application;
@@ -19,7 +22,7 @@ public class Main extends Application {
 
 
         stage.setMinHeight(500);
-        stage.setMinWidth(584);
+        stage.setMinWidth(603);
 
         stage.setScene(scene);
         stage.show();
